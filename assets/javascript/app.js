@@ -1,6 +1,3 @@
-
-//C:\Users\critt\bootcamp-projects\TriviaGame\assets\images\amy.jpg
-//C:\Users\critt\bootcamp-projects\TriviaGame\index.html
 //Question list
 var question = [{
     image: src = "assets/images/amy.jpg",
