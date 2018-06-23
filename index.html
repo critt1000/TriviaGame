@@ -1,29 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
+
 </head>
+
 <body>
-    <h1>Guess Who I am</h1>
 
-    <img id="image" src="assets/images/saw.jpg">
+    <div class="container" id="main">
+        <h1>Who am I? Solve before times runs out</h1>
+        <div class="container" id="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="container" id="container-questions">
+                        <img id="imageQuestion" src="assets/images/saw.jpg">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="container" id="container-incorrect">
 
-    <form action="" method="post">
-        <input type="radio" id="a1" name="answer" value="" />
-        <input type="radio" id="a2" name="answer" value="" />
-        <input type="radio" id="a3" name="answer" value="" />
-        <input type="radio" id="a4" name="answer" value="" />
-    </form>
-    
-    <input id="button" type="button" value="Next question" onclick="nextQuestion();">
-    
+                    </div>
+                    <div class="container" id="container-correct">
 
-    <script src="assets/javascript/app.js"></script>
+                    </div>
+                    <div class="container" id="container-timer">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="buttons">
+                <div class="col-sm" id="q1">
+                    q1
+                </div>
+                <div class="col-sm" id="q2">
+                    q2
+                </div>
+                <div class="col-sm" id="q3">
+                    q3
+                </div>
+                <div class="col-sm" id="q4">
+                    q4
+                </div>
+            </div>
+            <div class="row" id ="results-log">
+
+            </div>
+            <div class="row" id="results">
+                
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button type="button" id="start">Start</button>
+                </div>
+
+                <div class="col-sm">
+                    <button type="button" id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+
 </html>
